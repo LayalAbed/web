@@ -1,0 +1,625 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* background color */
+    color: #333333; /* coler texet */
+}
+
+/* Header section */
+header {
+    display: flex; /* to set the componanet Next to each other*/
+    justify-content: space-between; /*Controls the distribution of all elements within the container*/
+    align-items: center;
+    background-color: #595959; 
+    color: #f2f2f2;
+    padding: 10px 20px;
+}
+
+
+header.company-header {
+    background-color: #f2f2f2;
+    color: #f2f2f2;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+     color: #ffffff;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* to set the componanet Next to each other*/
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.header-links a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.header-links a:hover {
+    background-color: #a5a5a5; 
+    border-radius: 5px;
+    color: #333333;
+}
+
+/* User card */
+.user_card {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.user-photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #f2f2f2;
+}
+
+/* Main layout container */
+.container {
+    display: flex;
+    min-height: 80vh;
+}
+
+.container label {
+  padding: 2px 6px;
+    color: #333333;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Navigation */
+nav {
+    width: 15%;
+    background-color: #cccccc; 
+    padding: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #595959;
+    font-weight: normal;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+
+nav a:hover {
+    background-color: #595959; /* when the mauce move it */
+    color: #f2f2f2;
+    font-weight: bold;
+} 
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f2f2f2; 
+    color: #333333;
+}
+main {
+  flex: 2;         
+}
+
+/* Footer */
+footer {
+    background-color: #cccccc; 
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #595959;
+}
+
+
+.logo-small-foter {
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+input:focus, textarea:focus, select:focus {
+    background-color: #a5a5a5; 
+    color: #333333;
+    outline: none;
+}
+
+ label {
+    padding: 2px 6px;
+    color: #333333;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
+
+table {
+    width: 100%;
+    border: 2px solid #7f7f7f; 
+    font-family: 'Times New Roman', serif;
+    color: #333333;
+}
+table tbody td img {
+    max-width: 200px;  
+    max-height: 200px;  
+    object-fit: contain; 
+    display: block;
+    margin: 0 auto;
+}
+/* the farst coulm coler defent ather */
+thead th {
+    background-color: #595959;
+    color: #ffffff; 
+    text-align: center;
+    padding: 8px;
+}
+
+thead th a {
+    color: white;
+    text-decoration: none; /* color of link */
+}
+
+thead th a:hover {
+    text-decoration: underline;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #cccccc; 
+}
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; 
+}
+
+a.external:visited {
+    color: #595959; 
+    text-decoration: line-through;
+}
+a.external:hover {
+    color: #333333; 
+    text-decoration: none;
+}
+
+img.clickable:hover {
+    border: 3px solid #500808;
+}
+
+figcaption {
+    font-style: italic; 
+    color: #7f7f7f;
+    position: absolute; /*  define the component like heare parent */
+    bottom: 0; /* to set the caption in botoom*/
+    background: rgba(255,255,255,0.7);
+    width: 100%; /* to take the size for the parent */
+    align-self: center;
+}
+
+
+.rented {
+    color: red;
+}
+.available {
+    color: green;
+}
+
+ h2, h3 {
+    font-family: 'Times New Roman', serif;
+    color:  #2b0202;
+}
+
+h1 { 
+ font-family: 'Georgia', serif;
+    color: #f2f2f2;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #595959;
+    border-radius: 4px;
+}
+
+.login-form input[type="submit"] {
+    background-color: #595959;
+    color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #7f7f7f;
+}
+
+.login-form button {
+    background-color: #595959;
+    color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    font-family:'Times New Roman', serif;
+}
+
+.login-form button:hover {
+    background-color: #7f7f7f;
+}
+
+
+.error-msg {
+    color: red;
+    margin-bottom: 10px;
+     text-align: center;
+    font-weight: bold;
+}
+.login-form label {
+    border: none;
+    padding: 0;
+    color: black;        
+    font-weight: bold;  
+}
+
+.Step1 label {
+    border: none;
+  display: inline-block;
+  width: 180px; /*fixed*/
+  font-weight: bold;
+  vertical-align: middle; /*to sent it in same high*/
+  margin-right: 10px; /* space ptween lable and input */
+}
+
+.Step1 input[type="text"],
+.Step1 input[type="date"],
+.Step1 input[type="email"] {
+  width: 300px;
+  padding: 8px 12px;
+  border: 1px solid #595959;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+
+.Step1 label + input {
+    
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+
+.flatcard {
+  display: flex;
+  gap: 30px;          
+  align-items: flex-start;
+  padding: 20px;
+}
+
+
+.flat-photos {
+  flex: 1;           
+  max-width: 220px;    
+}
+
+.flat-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+figure {
+    position: relative;
+}
+
+.flat-images figure {
+  max-width: 180px;
+  margin: 0;
+  text-align: center;
+}
+
+.flat-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+
+/* Centered text for headings and instructions */
+/* sing- up to senter it */
+.account-table {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.account-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.account-button img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.center-text {
+    text-align: center;
+}
+/* sing- up to senter it */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*........................................*/
+/*Home Page
+/* Styling for info section */
+.homepage-about {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 1000px;
+}
+
+.homepage-about h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.homepage-about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Flat gallery layout for homepage */
+.flat-gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.flat-gallery-flex img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.flat-gallery-flex img:hover {
+    transform: scale(1.05);
+}
+/*........................................*/
+.about-page {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Times New Roman', serif;
+}
+
+.about-section {
+    margin-bottom: 40px;
+    background-color: #f7f7f7;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.about-section h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #444;
+}
+
+.about-section a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.about-section a:hover {
+    text-decoration: underline;
+}
+.city-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.city-photo {
+    text-align: center;
+}
+
+.city-photo img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.photo-caption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 16px;
+}
+/*........................................*/
+
+
+/* contant of car */
+.main-content-profile-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.profile-card {
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    list-style: none;
+    margin-bottom: 30px;
+}
+/* user profile */
+.profile-card li {
+    margin: 12px 0;
+    font-size: 16px;
+    color: #444;
+}
+
+.profile-card li strong {
+    width: 160px;
+    display: inline-block;
+    color: #222;
+}
+
+
+/* Request_Preview.php */
+.preview-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+.preview-table th, .preview-table td {
+    border: 1px solid #7f7f7f;
+    padding: 10px;
+    text-align: center;
+}
+
+.preview-table .booked {
+    background-color: #f8d7da; 
+    color: #721c24;
+}
+
+.preview-table button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.preview-table button {
+    background-color: #595959;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.preview-table button:hover:not(:disabled) {
+    background-color: #7f7f7f;
+}
+
+.link-button {
+    background-color: #f2f2f2;
+    color: #4a4a4a;
+    border: 1px solid #ccc;
+    padding: 8px 14px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13.5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1); 
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.link-button:hover {
+    background-color: #e0e0e0;
+    color: #222;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.2); 
+    text-decoration: none;
+}
+
+.color_masege_true {
+    color: #035614; 
+}
+
+.color_masege_false {
+    color: #560303; 
+}
+
